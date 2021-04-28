@@ -1,0 +1,17 @@
+body {
+  background-color: brown;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.box {
+  width: 250px;
+  height: 320px;
+  border: 7px solid chocolate;
+  padding: 50px;
+  margin: 100px auto;
+  border-radius: 15px;
+  background-color: coral;
+}
+#finalTip {
+  color: brown;
+  font-weight: bold;
+}

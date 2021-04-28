@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <form id="totalBill">
+        <label for="total">The total bill amount is</label>
+        <input type="number" id="total" name="total" min="5" placeholder="Bill Amount"> 
+    </form>
+    <form id="serviceLevel">
+        <p>How did you find the service level?</p>
+        <input type="radio" id="great" name="level" value="0.3">
+        <label for="great">Outstanding - 30%</label><br>
+        <input type="radio" id="good" name="level" value="0.2">
+        <label for="good">Good - 20%</label><br>
+        <input type="radio" id="ok" name="level" value="0.15">
+        <label for="ok">OKish - 15%</label><br>
+        <input type="radio" id="bad" name="level" value="0.1">
+        <label for="bad">Bad - 10%</label><br>
+        <input type="radio" id="worse" name="level" value="0">
+        <label for="worse">Never coming back - 0%</label><br>
+    </form>
+    <br>
+    <label for="numOfClients">Please select the number of people</label>
+    <select name="numOfClients" id="numOfClients"> 
+    <option disabled selected value="0">Select Number</option>
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    <option value="for">4</option>
+    <option value="five">5</option>
+    <option value="six">6</option>
+    <option value="seven">7</option>
+    <option value="eigth">8</option>
+    <option value="nine">9</option>
+    <option value="ten">10</option>
+</select>
+<br><br>
+<button type="button" id="tipCalc" >Calculate Tip</button> <!--Add event in js-->
+
+<output id="finalTip" name="result" for="tipCalc"></output>
+
+</div>
+    <script src="./main.js"></script>
+</body>
+</html>
