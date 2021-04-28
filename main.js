@@ -7,6 +7,6 @@ document.getElementById("tipCalc").addEventListener("click", calculateTip);
 function calculateTip() {
     for (let i = 0; i < qualityService.length; i++){
         if(qualityService[i].checked)
-        document.getElementById("finalTip").innerHTML = ((totalAmount.value * qualityService[i].value) / numOfPpl.value);
+        document.getElementById("finalTip").innerHTML = ((totalAmount.value * qualityService[i].value) / numOfPpl.value).toFixed(2);
     }
 }
